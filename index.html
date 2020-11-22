@@ -49,7 +49,9 @@
         var myVar;
         
         function myFunction() {
-          myVar = setTimeout(showPage, 3000);
+          if(document.readyState){
+              showPage();
+          }
         }
         
         function showPage() {
